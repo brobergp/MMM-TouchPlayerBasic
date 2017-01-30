@@ -58,7 +58,8 @@ To make it executable via the terminal use : chmod +x filename.sh
 	Replace R (or P) for lets say LOGO before the stations name,<br>
 	you should then add your image file named LOGO.png in the images folder.<br>
 <br>
-	For spacing purposes, the image has to be 60px wide.<br>
+	For spacing purposes, the image has to be 60px wide.
+	<br>
 <br>
 <br>
 <b>Tip!</b><br>
