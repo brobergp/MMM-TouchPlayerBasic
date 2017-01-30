@@ -6,6 +6,6 @@
 
   sleep 0.1
 
-  mpg123 -Z -@ /home/pi/MagicMirror/modules/mm-music-player/music/all.m3u
+  mpg123 -Z -@ /home/pi/Desktop/music/all.m3u
 
 

@@ -1,73 +1,106 @@
+/* TouchPlayerBasic interface layout */
 
-@keyframes buttfade {
-	
-    from { opacity: 0; }
-    to   { opacity: 1; }
-	from {right: -400px;}
+@keyframes stationMenuAnimation {
 
+  from { opacity: 0; }
+  to   { opacity: 1; }
+  from {  transform: rotate(-180deg); }
+  to {  transform: rotate(0deg);}
+}
+@keyframes topMenuAnimation {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
 .mainButton	{
 	z-index: 2;
-	
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+
 }
 
 .stationMenu {
-		display: none;
-		z-index: 5;
-		animation-name: buttfade;
-		animation-duration: 0.5s;
-		position: absolute;
-		right: 45px;
+	display: none;
+	z-index: 5;
+  transform-origin: 70px 50px;
+	animation-name: stationMenuAnimation;
+	animation-duration: 0.5s;
+	position: absolute;
+	right: 110px;
+	bottom: 80px;
+
 }
+
+.stationList {
+  background-image: url('images/stationListExpand.png');
+  background-repeat: repeat-x;
+  height: 55px;
+  position: absolute;
+  bottom: -57px;
+  right: 20px;
+	z-index: 6;
+}
+.imgLeft {
+  position: absolute;
+  left: -20px;
+  bottom: 0px;
+}
+.imgRight {
+  position: absolute;
+  right:-20px;
+  bottom: 0px;
+}
+
 .topMenu {
-		display: none;
-		z-index: 6;
-
+  position: absolute;
+	bottom: -60px;
+  right: -71px;
+	display: none;
+	animation-name: topMenuAnimation;
+	animation-duration: 0.5s;
+	z-index: 6;
+	width: 220px;
+	height: 220px;
+	background-image: url('images/topMenu.png');
 }
-
-
 
 .rotate {
 	position: relative;
-	text-align: left; 
+	text-align: left;
 	vertical-align: middle;
 	bottom: 135px;
 	right: 0px;
-	transform: rotate(-90deg);	
+	transform: rotate(-90deg);
 	font-size: 18px;
 	font-weight: 100;
 	color: #555;
 	text-transform: capitalize;
-	
+
 }
 
 .stationButton	{
-    position: absolute;
-	
+  position: absolute;
+	z-index: 7;
 }
 .stopButton	{
-    position: absolute;
-	bottom: 90px;
+  position: absolute;
+	bottom: 75px;
+	left: 0px;
 	z-index: 11;
-	animation-name: buttfade;
-	animation-duration: 0.5s;
 }
 .volumedownButton	{
-    position: absolute;
-	bottom: 145px;
-
-
+  position: absolute;
+	bottom: 128px;
+	left: 20px;
 }
 .volumeupButton	{
-    position: absolute;
-	bottom: 200px;
-
-
+  position: absolute;
+	bottom: 158px;
+	left: 63px;
 }
 .muteButton	{
-    position: absolute;
-	bottom: 255px;
-
-;
+  position: absolute;
+	bottom: 158px;
+	left: 113px;
 }
