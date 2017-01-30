@@ -1,0 +1,73 @@
+
+@keyframes buttfade {
+	
+    from { opacity: 0; }
+    to   { opacity: 1; }
+	from {right: -400px;}
+
+}
+
+.mainButton	{
+	z-index: 2;
+	
+}
+
+.stationMenu {
+		display: none;
+		z-index: 5;
+		animation-name: buttfade;
+		animation-duration: 0.5s;
+		position: absolute;
+		right: 45px;
+}
+.topMenu {
+		display: none;
+		z-index: 6;
+
+}
+
+
+
+.rotate {
+	position: relative;
+	text-align: left; 
+	vertical-align: middle;
+	bottom: 135px;
+	right: 0px;
+	transform: rotate(-90deg);	
+	font-size: 18px;
+	font-weight: 100;
+	color: #555;
+	text-transform: capitalize;
+	
+}
+
+.stationButton	{
+    position: absolute;
+	
+}
+.stopButton	{
+    position: absolute;
+	bottom: 90px;
+	z-index: 11;
+	animation-name: buttfade;
+	animation-duration: 0.5s;
+}
+.volumedownButton	{
+    position: absolute;
+	bottom: 145px;
+
+
+}
+.volumeupButton	{
+    position: absolute;
+	bottom: 200px;
+
+
+}
+.muteButton	{
+    position: absolute;
+	bottom: 255px;
+
+;
+}
