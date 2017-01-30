@@ -79,7 +79,8 @@ To make it executable via the terminal use : chmod +x filename.sh
 <br>
 <br>
 <h3>Configuration Example</h3>
-	Remember the name of your .sh scriptfile should be exactly as the playlist/station you put in the config!<br>
+	Remember the name of your .sh scriptfile should be exactly as the playlist/station you put in the config! 
+	<br>
 	(Note! for "R example" to work the proper .sh filename should be "example.sh")
 
 ````javascript
