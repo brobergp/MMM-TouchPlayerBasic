@@ -11,7 +11,35 @@ This module requires that you have mpg123 installed.<br>
 To install it run : sudo apt-get install mpg123
 <br>
 <br>
-<br>
+
+## Installation
+
+  1\. Execute the following commands to install the module:
+
+```bash
+cd ~/MagicMirror/modules # navigate to module folder
+git clone https://github.com/brobergp/MMM-TouchPlayerBasic.git # clone this repository
+```
+
+  2\. Then, add the following into the `modules` section of your `config/config.js` file:
+
+````javascript
+{
+	module: 'MMM-TouchPlayerBasic',
+		position: 'bottom_right',
+		config: {
+			stations: [
+				"R radio", // Separation by space, First part "R" is the .png image filename, the second is .sh script name
+				"P playlist" // The default icons are R for radiostation and P for playlist icon.
+				]
+
+		}
+
+},
+````
+
+## Description
+
 This is a <b>Very Basic</b> Mp3 player, it lacks buttons for "previous" and "next" on the playlists,<br>
 therefor the playlists are default set to play a random mp3,<br>
 if you select the same playlist again it will restart mpg123 and choose another random mp3 (which in shuffle mode basically is the same as the next button).<br>
